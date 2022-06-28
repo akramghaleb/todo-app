@@ -1,5 +1,5 @@
 
-require('./bootstrap');
+//require('./bootstrap');
 
 import Vue from 'vue'
 import {routes} from './routes';
