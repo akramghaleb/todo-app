@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card{
+    @apply bg-white rounded-lg overflow-hidden shadow-md relative;
+}
+
+.badge{
+    @apply flex bg-secondary-100 text-secondary-200 rounded-full text-sm absolute top-0 p-2 mt-2 ml-2;
+}
