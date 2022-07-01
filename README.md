@@ -14,7 +14,7 @@
 
 ![Project Screenshot 1](sc/1.jpg)<br><br>
   ![Project Screenshot 2](sc/2.jpg)<br><br>
-   ![Project Screenshot 3](sc/3.jpg)<br><br>
+   ![Project Screenshot 3](sc/3.jpg)<br><br> 
    
 ## About Laravel
 
