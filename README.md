@@ -12,9 +12,9 @@
 ### This project built with Laravel + Vue + Tailwind <br>
 <br>
 
- ![Project Screenshot 1](sc/1.jpg)<br><br>
-  ![Project Screenshot 1](sc/2.jpg)<br><br>
-   ![Project Screenshot 1](sc/3.jpg)<br><br>
+ ![Project Screenshot 1](./sc/1.jpg)<br><br>
+  ![Project Screenshot 1](./sc/2.jpg)<br><br>
+   ![Project Screenshot 1](./sc/3.jpg)<br><br>
    
 ## About Laravel
 
