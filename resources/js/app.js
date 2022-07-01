@@ -1,5 +1,5 @@
 
-//require('./bootstrap');
+require('./bootstrap');
 
 import Vue from 'vue'
 import {routes} from './routes';
@@ -9,6 +9,27 @@ import {routes} from './routes';
 import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
+
+//Sweet alert
+import Swal from 'sweetalert2';
+window.Swal = Swal;
+
+//Sweet alert
+import Notification from './helpers/Notification';
+window.Notification = Notification;
+
+const Toast = Swal.mixin({
+    toast: true,
+    position: 'top-end',
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+        toast.addEventListener('mouseenter', Swal.stopTimer)
+        toast.addEventListener('mouseleave', Swal.resumeTimer)
+    }
+});
+window.Toast = Toast;
 
 
 const router = new VueRouter({
