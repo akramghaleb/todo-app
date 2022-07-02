@@ -10,7 +10,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-# This project built with Laravel + Vue + Tailwind <br>
+## This project built with Laravel + Vue + Tailwind <br>
 <br>
 
 ![Project Screenshot 1](scs/1.jpg)<br><br>
