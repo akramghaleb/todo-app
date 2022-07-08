@@ -11,11 +11,26 @@
 </p>
 
 ## This project built with Laravel + Vue + Tailwind <br>
-<br>
 
-![Project Screenshot 1](scs/1.jpg)<br><br>
-  ![Project Screenshot 2](scs/2.jpg)<br><br>
-   ![Project Screenshot 3](scs/3.jpg)<br><br> 
+
+### Support Light & Dark theme <br>
+
+### Support Soft delete and recover tasks <br>
+
+### Support order list by drag and drop tasks<br>
+
+#### I hope you would like it<br><br>
+
+![Project Screenshot 1](scs/9.PNG)
+![Project Screenshot 1](scs/10.PNG)<br><br>
+  ![Project Screenshot 2](scs/1.PNG)<br><br>
+  ![Project Screenshot 2](scs/2.PNG)<br><br>
+  ![Project Screenshot 2](scs/3.PNG)<br><br>
+  ![Project Screenshot 2](scs/4.PNG)<br><br>
+  ![Project Screenshot 2](scs/5.PNG)<br><br>
+  ![Project Screenshot 2](scs/6.PNG)<br><br>
+  ![Project Screenshot 2](scs/7.PNG)<br><br>
+  ![Project Screenshot 2](scs/8.PNG)<br><br>
    
 ## About Laravel
 
