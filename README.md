@@ -19,7 +19,7 @@
 
 ### Support order list by drag and drop tasks<br>
 
-#### I hope you would like it<br><br>
+<br><br>
 
 ![Project Screenshot 1](scs/9.PNG)
 ![Project Screenshot 1](scs/10.PNG)<br><br>
