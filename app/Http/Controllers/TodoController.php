@@ -10,7 +10,8 @@ use Illuminate\Support\Facades\Validator;
 class TodoController extends Controller
 {
     public function index(){
-        $data = Todo::all();
+        $data = Todo::orderBy('order', 'ASC')->orderBy('id', 'DESC')->get();
+
         return response()->json($data);
     }
 
@@ -18,6 +19,7 @@ class TodoController extends Controller
         $data = Todo::onlyTrashed()->latest()->get();
         return response()->json($data);
     }
+
 
     public function show($id){
         $data = Todo::find($id);
@@ -80,6 +82,20 @@ class TodoController extends Controller
             ]);
         }
 
+    }
+
+
+    public function order(Request $request,$id){
+        $validateData = Validator::make($request->all(), [
+            'order'=>'required',
+        ]);
+        $data = Todo::find($id);
+        $data->order = $request->order;
+        $data->save();
+        return response()->json([
+            'success' => true,
+            'message' => 'Update successfully',
+        ]);
     }
 
     public function completed($id){

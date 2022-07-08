@@ -28,6 +28,7 @@
     "dependencies": {
         "noty": "^3.2.0-beta-deprecated",
         "sweetalert2": "^11.4.14",
-        "vue-router": "^3.1.6"
+        "vue-router": "^3.1.6",
+        "vuedraggable": "^2.24.3"
     }
 }

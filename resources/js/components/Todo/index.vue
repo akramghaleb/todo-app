@@ -10,8 +10,9 @@
                 </router-link>
             </div>
             <div class="flow-root">
-                <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700" v-for="(t, index) in todo_data" :key="index">
-                    <li class="py-3 sm:py-4 hover:bg-gray-200 dark:hover:bg-indigo-900 pr-2 pl-2 " >
+                <draggable :list="todo_data" :animation="200" @change="on_change()"
+                           class="divide-y divide-gray-200 dark:divide-gray-700">
+                    <li class="py-3 sm:py-4 hover:bg-gray-200 dark:hover:bg-indigo-900 pr-2 pl-2 "  v-for="(t, index) in todo_data" :key="index">
                         <div class="flex items-center space-x-4">
                             <div class="flex-1 min-w-0 cursor-pointer" @click="comp_todo(t.id)">
                                 <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
@@ -37,7 +38,7 @@
                             </div>
                         </div>
                     </li>
-                </ul>
+                </draggable>
             </div>
         </div>
     </div>
@@ -46,11 +47,13 @@
 
 <script>
 import Navbar from './nav';
+import Draggable from 'vuedraggable'
 
 export default {
     name: "index",
     components:{
-        Navbar
+        Navbar,
+        Draggable
     },
     data(){
         return {
@@ -96,6 +99,16 @@ export default {
                         icon: 'success',
                         title: 'task moved to trash',
                     })
+                }
+            },
+            async on_change(){
+                for(const d in this.todo_data){
+                    //console.log(this.todo_data[d].name);
+                    await axios.put('/api/todo/order/'+this.todo_data[d].id ,{'order':d.toString()})
+                        .then(res => console.log(res.data))
+                        .catch(error => {
+                            this.errors = error.response.data.errors
+                        });
                 }
             }
         },
