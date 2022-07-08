@@ -22,6 +22,9 @@
                 <router-link to="/todo/new" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
                     Create new
                 </router-link>
+                <router-link to="/todo/trash" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+                    Trash
+                </router-link>
             </div>
         </div>
     </nav>
