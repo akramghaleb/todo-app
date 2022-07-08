@@ -11,7 +11,7 @@
             </div>
             <div class="flow-root">
                 <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700" v-for="(t, index) in todo_data" :key="index">
-                    <li class="py-3 sm:py-4 hover:bg-gray-200 pr-2 pl-2 " >
+                    <li class="py-3 sm:py-4 hover:bg-gray-200 dark:hover:bg-indigo-900 pr-2 pl-2 " >
                         <div class="flex items-center space-x-4">
                             <div class="flex-1 min-w-0 cursor-pointer" @click="comp_todo(t.id)">
                                 <p class="text-sm font-medium text-gray-900 truncate dark:text-white">

@@ -15,9 +15,10 @@ return new class extends Migration
     {
         Schema::create('todos', function (Blueprint $table) {
             $table->id();
+            $table->integer('order')->nullable();
             $table->string('name');
-            $table->text('description');
-            $table->boolean('completed');
+            $table->text('description')->nullable();
+            $table->boolean('completed')->default(0);
             $table->timestamps();
             $table->SoftDeletes();
         });

@@ -14,6 +14,11 @@ class TodoController extends Controller
         return response()->json($data);
     }
 
+    public function index_trash(){
+        $data = Todo::onlyTrashed()->latest()->get();
+        return response()->json($data);
+    }
+
     public function show($id){
         $data = Todo::find($id);
         return response()->json($data);
@@ -98,5 +103,24 @@ class TodoController extends Controller
             'message' => 'delete successfully',
         ]);
 
+    }
+
+    public function recover($id){
+        $data = Todo::withTrashed()->find($id)->restore();
+        return response()->json([
+            'success' => true,
+            'message' => 'recovered successfully',
+        ]);
+    }
+
+    public function destroy($id)
+    {
+        $data = Todo::onlyTrashed()->find($id);
+
+        $data->forceDelete();
+        return response()->json([
+            'success' => true,
+            'message' => 'force delete successfully',
+        ]);
     }
 }

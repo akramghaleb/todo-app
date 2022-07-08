@@ -33208,7 +33208,7 @@ var render = function () {
                       "li",
                       {
                         staticClass:
-                          "py-3 sm:py-4 hover:bg-gray-200 pr-2 pl-2 ",
+                          "py-3 sm:py-4 hover:bg-gray-200 dark:hover:bg-indigo-900 pr-2 pl-2 ",
                       },
                       [
                         _c(

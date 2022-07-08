@@ -8,7 +8,7 @@
 
         <link href="{{asset('css/app.css')}}" rel="stylesheet">
     </head>
-    <body class="antialiased">
+    <body class="antialiased  dark:bg-gray-800 dark:border-gray-700">
         <div id="app">
             <router-view></router-view>
         </div>
