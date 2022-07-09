@@ -13,11 +13,11 @@
 ## This project built with Laravel + Vue + Tailwind <br>
 
 
-### . Support Light & Dark theme <br>
+#### . Support Light & Dark theme <br>
 
-### . Support Soft delete and recover tasks <br>
+#### . Support Soft delete and recover tasks <br>
 
-### . Support order list by drag and drop tasks<br>
+#### . Support order list by drag and drop tasks<br>
 
 <br><br>
 
