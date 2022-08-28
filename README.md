@@ -15,7 +15,7 @@
 - Support Light & Dark theme
 - Support Soft delete and recover tasks
 - Support order list by drag and drop tasks
-- If you like this work you can <a href="https://github.com/akramdev-ye">see more here</a>
+- If you like this work you can <a href="https://github.com/akramghaleb">see more here</a>
 
 <br><br>
 
